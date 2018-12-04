@@ -72,17 +72,7 @@ public class Crawler {
                 Document doc = Jsoup.connect(url).get();
                 Elements monsterNames = doc.select(".stat-block-title > b");
 
-                for (Element element: monsterNames) {
-                    element.select(".stat-block-cr").remove();
-                    String monsterNameString = element.text();
-
-                    JSONObject monster = new JSONObject();
-                    monster.put("name", monsterNameString);
-                    monster.put("spells", "test");
-
-                    jsonArray.put(monster);
-                }
-
+                insertJson(jsonArray, monsterNames);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -90,6 +80,24 @@ public class Crawler {
 
         System.out.println(jsonArray);
         return jsonArray;
+    }
+
+    /**
+     * Build Json Array
+     * @param jsonArray JSONArray
+     * @param monsterNames Elements
+     */
+    private void insertJson(JSONArray jsonArray, Elements monsterNames) {
+        for (Element element: monsterNames) {
+            element.select(".stat-block-cr").remove();
+            String monsterNameString = element.text();
+
+            JSONObject monster = new JSONObject();
+            monster.put("name", monsterNameString);
+            monster.put("spells", "test");
+
+            jsonArray.put(monster);
+        }
     }
 
     /**
