@@ -1,0 +1,1105 @@
+[ {
+  "name" : "Aasimar",
+  "spells" : "test"
+}, {
+  "name" : "Aboleth",
+  "spells" : "test"
+}, {
+  "name" : "Astral Deva",
+  "spells" : "test"
+}, {
+  "name" : "Planetar",
+  "spells" : "test"
+}, {
+  "name" : "Solar",
+  "spells" : "test"
+}, {
+  "name" : "Animated Object",
+  "spells" : "test"
+}, {
+  "name" : "Ankheg",
+  "spells" : "test"
+}, {
+  "name" : "Army Ant Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Giant Ant",
+  "spells" : "test"
+}, {
+  "name" : "Army Ant Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Giant Ant",
+  "spells" : "test"
+}, {
+  "name" : "Gorilla",
+  "spells" : "test"
+}, {
+  "name" : "Dire Ape (Gigantopithecus)",
+  "spells" : "test"
+}, {
+  "name" : "Hound Archon",
+  "spells" : "test"
+}, {
+  "name" : "Lantern Archon",
+  "spells" : "test"
+}, {
+  "name" : "Trumpet Archon",
+  "spells" : "test"
+}, {
+  "name" : "Assassin Vine",
+  "spells" : "test"
+}, {
+  "name" : "Bralani",
+  "spells" : "test"
+}, {
+  "name" : "Ghaele",
+  "spells" : "test"
+}, {
+  "name" : "Lillend",
+  "spells" : "test"
+}, {
+  "name" : "Barghest",
+  "spells" : "test"
+}, {
+  "name" : "Greater Barghest",
+  "spells" : "test"
+}, {
+  "name" : "Basidirond",
+  "spells" : "test"
+}, {
+  "name" : "Basilisk",
+  "spells" : "test"
+}, {
+  "name" : "Dire Bat",
+  "spells" : "test"
+}, {
+  "name" : "Bat Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Grizzly Bear",
+  "spells" : "test"
+}, {
+  "name" : "Dire Bear (Cave Bear)",
+  "spells" : "test"
+}, {
+  "name" : "Bebilith",
+  "spells" : "test"
+}, {
+  "name" : "Fire Beetle",
+  "spells" : "test"
+}, {
+  "name" : "Giant Stag Beetle",
+  "spells" : "test"
+}, {
+  "name" : "Behir",
+  "spells" : "test"
+}, {
+  "name" : "Black Pudding",
+  "spells" : "test"
+}, {
+  "name" : "Boar",
+  "spells" : "test"
+}, {
+  "name" : "Dire Boar (Daeodon)",
+  "spells" : "test"
+}, {
+  "name" : "Boggard",
+  "spells" : "test"
+}, {
+  "name" : "Bugbear",
+  "spells" : "test"
+}, {
+  "name" : "Bulette",
+  "spells" : "test"
+}, {
+  "name" : "Cheetah",
+  "spells" : "test"
+}, {
+  "name" : "Leopard",
+  "spells" : "test"
+}, {
+  "name" : "Cave Fisher",
+  "spells" : "test"
+}, {
+  "name" : "Centaur",
+  "spells" : "test"
+}, {
+  "name" : "Giant Centipede",
+  "spells" : "test"
+}, {
+  "name" : "Centipede Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Chimera",
+  "spells" : "test"
+}, {
+  "name" : "Choker",
+  "spells" : "test"
+}, {
+  "name" : "Chuul",
+  "spells" : "test"
+}, {
+  "name" : "Cloaker",
+  "spells" : "test"
+}, {
+  "name" : "Cockatrice",
+  "spells" : "test"
+}, {
+  "name" : "Couatl",
+  "spells" : "test"
+}, {
+  "name" : "Giant Crab",
+  "spells" : "test"
+}, {
+  "name" : "Crab Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Crocodile",
+  "spells" : "test"
+}, {
+  "name" : "Dire Crocodile",
+  "spells" : "test"
+}, {
+  "name" : "Cyclops",
+  "spells" : "test"
+}, {
+  "name" : "Dark Creeper",
+  "spells" : "test"
+}, {
+  "name" : "Dark Stalker",
+  "spells" : "test"
+}, {
+  "name" : "Darkmantle",
+  "spells" : "test"
+}, {
+  "name" : "Babau",
+  "spells" : "test"
+}, {
+  "name" : "Balor",
+  "spells" : "test"
+}, {
+  "name" : "Dretch",
+  "spells" : "test"
+}, {
+  "name" : "Glabrezu",
+  "spells" : "test"
+}, {
+  "name" : "Hezrou",
+  "spells" : "test"
+}, {
+  "name" : "Marilith",
+  "spells" : "test"
+}, {
+  "name" : "Nabasu",
+  "spells" : "test"
+}, {
+  "name" : "Nalfeshnee",
+  "spells" : "test"
+}, {
+  "name" : "Quasit",
+  "spells" : "test"
+}, {
+  "name" : "Shadow Demon",
+  "spells" : "test"
+}, {
+  "name" : "Succubus",
+  "spells" : "test"
+}, {
+  "name" : "Vrock",
+  "spells" : "test"
+}, {
+  "name" : "Derro",
+  "spells" : "test"
+}, {
+  "name" : "Barbed Devil (Hamatula)",
+  "spells" : "test"
+}, {
+  "name" : "Bearded Devil (Barbazu)",
+  "spells" : "test"
+}, {
+  "name" : "Bone Devil (Osyluth)",
+  "spells" : "test"
+}, {
+  "name" : "Erinyes",
+  "spells" : "test"
+}, {
+  "name" : "Horned Devil (Cornugon)",
+  "spells" : "test"
+}, {
+  "name" : "Ice Devil (Gelugon)",
+  "spells" : "test"
+}, {
+  "name" : "Imp",
+  "spells" : "test"
+}, {
+  "name" : "Lemure",
+  "spells" : "test"
+}, {
+  "name" : "Pit Fiend",
+  "spells" : "test"
+}, {
+  "name" : "Devourer",
+  "spells" : "test"
+}, {
+  "name" : "Ankylosaurus",
+  "spells" : "test"
+}, {
+  "name" : "Brachiosaurus",
+  "spells" : "test"
+}, {
+  "name" : "Deinonychus",
+  "spells" : "test"
+}, {
+  "name" : "Elasmosaurus",
+  "spells" : "test"
+}, {
+  "name" : "Pteranodon",
+  "spells" : "test"
+}, {
+  "name" : "Stegosaurus",
+  "spells" : "test"
+}, {
+  "name" : "Triceratops",
+  "spells" : "test"
+}, {
+  "name" : "Tyrannosaurus",
+  "spells" : "test"
+}, {
+  "name" : "Dog",
+  "spells" : "test"
+}, {
+  "name" : "Rabies",
+  "spells" : "test"
+}, {
+  "name" : "Riding Dog",
+  "spells" : "test"
+}, {
+  "name" : "Dolphin",
+  "spells" : "test"
+}, {
+  "name" : "Orca",
+  "spells" : "test"
+}, {
+  "name" : "Doppelganger",
+  "spells" : "test"
+}, {
+  "name" : "Black Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Black Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Black Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Black Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Blue Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Blue Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Blue Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Blue Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Green Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Green Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Green Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Green Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Red Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Red Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Red Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Red Dragon",
+  "spells" : "test"
+}, {
+  "name" : "White Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young White Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult White Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient White Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Brass Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Brass Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Brass Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Brass Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Bronze Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Bronze Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Bronze Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Bronze Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Copper Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Copper Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Copper Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Copper Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Gold Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Gold Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Gold Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Gold Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Silver Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Young Silver Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Adult Silver Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Ancient Silver Dragon",
+  "spells" : "test"
+}, {
+  "name" : "Dragon Turtle",
+  "spells" : "test"
+}, {
+  "name" : "Drider",
+  "spells" : "test"
+}, {
+  "name" : "Drow",
+  "spells" : "test"
+}, {
+  "name" : "Drow Noble",
+  "spells" : "test"
+}, {
+  "name" : "Dryad",
+  "spells" : "test"
+}, {
+  "name" : "Duergar",
+  "spells" : "test"
+}, {
+  "name" : "Eagle",
+  "spells" : "test"
+}, {
+  "name" : "Giant Eagle",
+  "spells" : "test"
+}, {
+  "name" : "Electric Eel",
+  "spells" : "test"
+}, {
+  "name" : "Giant Moray Eel",
+  "spells" : "test"
+}, {
+  "name" : "Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Small Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Medium Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Large Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Huge Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Greater Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Elder Air Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Small Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Medium Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Large Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Huge Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Greater Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Elder Earth Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Small Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Medium Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Large Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Huge Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Greater Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Elder Fire Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Small Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Medium Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Large Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Huge Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Greater Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Elder Water Elemental",
+  "spells" : "test"
+}, {
+  "name" : "Ettercap",
+  "spells" : "test"
+}, {
+  "name" : "Ettin",
+  "spells" : "test"
+}, {
+  "name" : "Bat",
+  "spells" : "test"
+}, {
+  "name" : "Cat",
+  "spells" : "test"
+}, {
+  "name" : "Hawk",
+  "spells" : "test"
+}, {
+  "name" : "Lizard",
+  "spells" : "test"
+}, {
+  "name" : "Monkey",
+  "spells" : "test"
+}, {
+  "name" : "Owl",
+  "spells" : "test"
+}, {
+  "name" : "Rat",
+  "spells" : "test"
+}, {
+  "name" : "Raven",
+  "spells" : "test"
+}, {
+  "name" : "Toad",
+  "spells" : "test"
+}, {
+  "name" : "Viper",
+  "spells" : "test"
+}, {
+  "name" : "Weasel",
+  "spells" : "test"
+}, {
+  "name" : "Giant Flytrap",
+  "spells" : "test"
+}, {
+  "name" : "Giant Frog",
+  "spells" : "test"
+}, {
+  "name" : "Poison Frog",
+  "spells" : "test"
+}, {
+  "name" : "Froghemoth",
+  "spells" : "test"
+}, {
+  "name" : "Gargoyle",
+  "spells" : "test"
+}, {
+  "name" : "Gelatinous Cube",
+  "spells" : "test"
+}, {
+  "name" : "Djinni",
+  "spells" : "test"
+}, {
+  "name" : "Efreeti",
+  "spells" : "test"
+}, {
+  "name" : "Janni",
+  "spells" : "test"
+}, {
+  "name" : "Marid",
+  "spells" : "test"
+}, {
+  "name" : "Shaitan",
+  "spells" : "test"
+}, {
+  "name" : "Ghost",
+  "spells" : "test"
+}, {
+  "name" : "Ghoul",
+  "spells" : "test"
+}, {
+  "name" : "Cloud Giant",
+  "spells" : "test"
+}, {
+  "name" : "Fire Giant",
+  "spells" : "test"
+}, {
+  "name" : "Frost Giant",
+  "spells" : "test"
+}, {
+  "name" : "Hill Giant",
+  "spells" : "test"
+}, {
+  "name" : "Stone Giant",
+  "spells" : "test"
+}, {
+  "name" : "Storm Giant",
+  "spells" : "test"
+}, {
+  "name" : "Gibbering Mouther",
+  "spells" : "test"
+}, {
+  "name" : "Girallon",
+  "spells" : "test"
+}, {
+  "name" : "Gnoll",
+  "spells" : "test"
+}, {
+  "name" : "Goblin",
+  "spells" : "test"
+}, {
+  "name" : "Goblin Dog",
+  "spells" : "test"
+}, {
+  "name" : "Clay Golem",
+  "spells" : "test"
+}, {
+  "name" : "Clay Golem",
+  "spells" : "test"
+}, {
+  "name" : "Flesh Golem",
+  "spells" : "test"
+}, {
+  "name" : "Flesh Golem",
+  "spells" : "test"
+}, {
+  "name" : "Ice Golem",
+  "spells" : "test"
+}, {
+  "name" : "Ice Golem",
+  "spells" : "test"
+}, {
+  "name" : "Iron Golem",
+  "spells" : "test"
+}, {
+  "name" : "Iron Golem",
+  "spells" : "test"
+}, {
+  "name" : "Stone Golem",
+  "spells" : "test"
+}, {
+  "name" : "Stone Golem",
+  "spells" : "test"
+}, {
+  "name" : "Wood Golem",
+  "spells" : "test"
+}, {
+  "name" : "Wood Golem",
+  "spells" : "test"
+}, {
+  "name" : "Gorgon",
+  "spells" : "test"
+}, {
+  "name" : "Gray Ooze",
+  "spells" : "test"
+}, {
+  "name" : "Green Hag",
+  "spells" : "test"
+}, {
+  "name" : "Griffon",
+  "spells" : "test"
+}, {
+  "name" : "Half-Celestial Unicorn",
+  "spells" : "test"
+}, {
+  "name" : "Dracolisk",
+  "spells" : "test"
+}, {
+  "name" : "Half-Fiend Minotaur",
+  "spells" : "test"
+}, {
+  "name" : "Harpy",
+  "spells" : "test"
+}, {
+  "name" : "Hell Hound",
+  "spells" : "test"
+}, {
+  "name" : "Nessian Warhound",
+  "spells" : "test"
+}, {
+  "name" : "Aurochs",
+  "spells" : "test"
+}, {
+  "name" : "Bison",
+  "spells" : "test"
+}, {
+  "name" : "Hobgoblin",
+  "spells" : "test"
+}, {
+  "name" : "Homunculus",
+  "spells" : "test"
+}, {
+  "name" : "Homunculus",
+  "spells" : "test"
+}, {
+  "name" : "Horse",
+  "spells" : "test"
+}, {
+  "name" : "Pony",
+  "spells" : "test"
+}, {
+  "name" : "Hydra",
+  "spells" : "test"
+}, {
+  "name" : "Hyena",
+  "spells" : "test"
+}, {
+  "name" : "Dire Hyena (Hyaenodon)",
+  "spells" : "test"
+}, {
+  "name" : "Intellect Devourer",
+  "spells" : "test"
+}, {
+  "name" : "Invisible Stalker",
+  "spells" : "test"
+}, {
+  "name" : "Iron Cobra",
+  "spells" : "test"
+}, {
+  "name" : "Iron Cobra",
+  "spells" : "test"
+}, {
+  "name" : "Kobold",
+  "spells" : "test"
+}, {
+  "name" : "Kraken",
+  "spells" : "test"
+}, {
+  "name" : "Kyton",
+  "spells" : "test"
+}, {
+  "name" : "Lamia",
+  "spells" : "test"
+}, {
+  "name" : "Giant Leech",
+  "spells" : "test"
+}, {
+  "name" : "Leech Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Lich",
+  "spells" : "test"
+}, {
+  "name" : "Crag Linnorm",
+  "spells" : "test"
+}, {
+  "name" : "Ice Linnorm",
+  "spells" : "test"
+}, {
+  "name" : "Tarn Linnorm",
+  "spells" : "test"
+}, {
+  "name" : "Lion",
+  "spells" : "test"
+}, {
+  "name" : "Dire Lion (Spotted Lion)",
+  "spells" : "test"
+}, {
+  "name" : "Monitor Lizard",
+  "spells" : "test"
+}, {
+  "name" : "Giant Frilled Lizard",
+  "spells" : "test"
+}, {
+  "name" : "Lizardfolk",
+  "spells" : "test"
+}, {
+  "name" : "Wererat (Human Form)",
+  "spells" : "test"
+}, {
+  "name" : "Wererat (Hybrid Form)",
+  "spells" : "test"
+}, {
+  "name" : "WerewolF",
+  "spells" : "test"
+}, {
+  "name" : "Werewolf (Hybrid Form)",
+  "spells" : "test"
+}, {
+  "name" : "Manticore",
+  "spells" : "test"
+}, {
+  "name" : "Giant Mantis",
+  "spells" : "test"
+}, {
+  "name" : "Medusa",
+  "spells" : "test"
+}, {
+  "name" : "Mephit",
+  "spells" : "test"
+}, {
+  "name" : "Merfolk",
+  "spells" : "test"
+}, {
+  "name" : "Mimic",
+  "spells" : "test"
+}, {
+  "name" : "Minotaur",
+  "spells" : "test"
+}, {
+  "name" : "Mite",
+  "spells" : "test"
+}, {
+  "name" : "Mohrg",
+  "spells" : "test"
+}, {
+  "name" : "Morlock",
+  "spells" : "test"
+}, {
+  "name" : "Mummy",
+  "spells" : "test"
+}, {
+  "name" : "Dark Naga",
+  "spells" : "test"
+}, {
+  "name" : "Guardian Naga",
+  "spells" : "test"
+}, {
+  "name" : "Spirit Naga",
+  "spells" : "test"
+}, {
+  "name" : "Neothelid",
+  "spells" : "test"
+}, {
+  "name" : "Night Hag",
+  "spells" : "test"
+}, {
+  "name" : "Nightmare",
+  "spells" : "test"
+}, {
+  "name" : "Cauchemar",
+  "spells" : "test"
+}, {
+  "name" : "Nymph",
+  "spells" : "test"
+}, {
+  "name" : "Ochre Jelly",
+  "spells" : "test"
+}, {
+  "name" : "Octopus",
+  "spells" : "test"
+}, {
+  "name" : "Giant Octopus",
+  "spells" : "test"
+}, {
+  "name" : "Ogre",
+  "spells" : "test"
+}, {
+  "name" : "Ogre Mage",
+  "spells" : "test"
+}, {
+  "name" : "Orc",
+  "spells" : "test"
+}, {
+  "name" : "Otyugh",
+  "spells" : "test"
+}, {
+  "name" : "Owlbear",
+  "spells" : "test"
+}, {
+  "name" : "Pegasus",
+  "spells" : "test"
+}, {
+  "name" : "Phase Spider",
+  "spells" : "test"
+}, {
+  "name" : "Phoenix",
+  "spells" : "test"
+}, {
+  "name" : "Pixie",
+  "spells" : "test"
+}, {
+  "name" : "Pseudodragon",
+  "spells" : "test"
+}, {
+  "name" : "Purple Worm",
+  "spells" : "test"
+}, {
+  "name" : "Rakshasa",
+  "spells" : "test"
+}, {
+  "name" : "Dire Rat",
+  "spells" : "test"
+}, {
+  "name" : "Rat Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Remorhaz",
+  "spells" : "test"
+}, {
+  "name" : "Retriever",
+  "spells" : "test"
+}, {
+  "name" : "Rhinoceros",
+  "spells" : "test"
+}, {
+  "name" : "Woolly Rhinoceros",
+  "spells" : "test"
+}, {
+  "name" : "Roc",
+  "spells" : "test"
+}, {
+  "name" : "Roper",
+  "spells" : "test"
+}, {
+  "name" : "Rust Monster",
+  "spells" : "test"
+}, {
+  "name" : "Sahuagin",
+  "spells" : "test"
+}, {
+  "name" : "Salamander",
+  "spells" : "test"
+}, {
+  "name" : "Satyr",
+  "spells" : "test"
+}, {
+  "name" : "Giant Scorpion",
+  "spells" : "test"
+}, {
+  "name" : "Sea Hag",
+  "spells" : "test"
+}, {
+  "name" : "Sea Serpent",
+  "spells" : "test"
+}, {
+  "name" : "Shadow",
+  "spells" : "test"
+}, {
+  "name" : "Greater Shadow",
+  "spells" : "test"
+}, {
+  "name" : "Shambling Mound",
+  "spells" : "test"
+}, {
+  "name" : "Shark",
+  "spells" : "test"
+}, {
+  "name" : "Dire Shark (Megalodon)",
+  "spells" : "test"
+}, {
+  "name" : "Shocker Lizard",
+  "spells" : "test"
+}, {
+  "name" : "Shoggoth",
+  "spells" : "test"
+}, {
+  "name" : "Human Skeleton",
+  "spells" : "test"
+}, {
+  "name" : "Skeletal Champion",
+  "spells" : "test"
+}, {
+  "name" : "Skum (Ulat-Kini)",
+  "spells" : "test"
+}, {
+  "name" : "Giant Slug",
+  "spells" : "test"
+}, {
+  "name" : "Constrictor Snake",
+  "spells" : "test"
+}, {
+  "name" : "Venomous Snake",
+  "spells" : "test"
+}, {
+  "name" : "Spectre",
+  "spells" : "test"
+}, {
+  "name" : "Sphinx (Gynosphinx)",
+  "spells" : "test"
+}, {
+  "name" : "Giant Spider",
+  "spells" : "test"
+}, {
+  "name" : "Spider Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Squid",
+  "spells" : "test"
+}, {
+  "name" : "Giant Squid",
+  "spells" : "test"
+}, {
+  "name" : "Stirge",
+  "spells" : "test"
+}, {
+  "name" : "Svirfneblin",
+  "spells" : "test"
+}, {
+  "name" : "Tarrasque",
+  "spells" : "test"
+}, {
+  "name" : "Tengu",
+  "spells" : "test"
+}, {
+  "name" : "Tiefling",
+  "spells" : "test"
+}, {
+  "name" : "Tiger",
+  "spells" : "test"
+}, {
+  "name" : "Dire Tiger (Smilodon)",
+  "spells" : "test"
+}, {
+  "name" : "Treant",
+  "spells" : "test"
+}, {
+  "name" : "Troglodyte",
+  "spells" : "test"
+}, {
+  "name" : "Troll",
+  "spells" : "test"
+}, {
+  "name" : "Unicorn",
+  "spells" : "test"
+}, {
+  "name" : "Vampire",
+  "spells" : "test"
+}, {
+  "name" : "Vargouille",
+  "spells" : "test"
+}, {
+  "name" : "Vegepygmy",
+  "spells" : "test"
+}, {
+  "name" : "Violet Fungus",
+  "spells" : "test"
+}, {
+  "name" : "Giant Wasp",
+  "spells" : "test"
+}, {
+  "name" : "Wasp Swarm",
+  "spells" : "test"
+}, {
+  "name" : "Wight",
+  "spells" : "test"
+}, {
+  "name" : "Will-o'-wisp",
+  "spells" : "test"
+}, {
+  "name" : "Wolf",
+  "spells" : "test"
+}, {
+  "name" : "Dire Wolf",
+  "spells" : "test"
+}, {
+  "name" : "Wolf",
+  "spells" : "test"
+}, {
+  "name" : "Dire Wolf",
+  "spells" : "test"
+}, {
+  "name" : "Wolverine",
+  "spells" : "test"
+}, {
+  "name" : "Dire Wolverine",
+  "spells" : "test"
+}, {
+  "name" : "Worg",
+  "spells" : "test"
+}, {
+  "name" : "Winter Wolf",
+  "spells" : "test"
+}, {
+  "name" : "Wraith",
+  "spells" : "test"
+}, {
+  "name" : "Wyvern",
+  "spells" : "test"
+}, {
+  "name" : "Xill",
+  "spells" : "test"
+}, {
+  "name" : "Xorn",
+  "spells" : "test"
+}, {
+  "name" : "Yellow Musk Creeper",
+  "spells" : "test"
+}, {
+  "name" : "Yeth Hound",
+  "spells" : "test"
+}, {
+  "name" : "Yeti",
+  "spells" : "test"
+}, {
+  "name" : "Human Zombie",
+  "spells" : "test"
+} ]
