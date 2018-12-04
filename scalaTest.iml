@@ -11,5 +11,7 @@
     <orderEntry type="library" name="jars" level="application" />
     <orderEntry type="library" name="org.jsoup:jsoup:1.11.3" level="project" />
     <orderEntry type="library" name="org.json:json:20180813" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.9.7" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.9.7" level="project" />
   </component>
 </module>
