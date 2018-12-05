@@ -117,7 +117,7 @@ public class Crawler {
         }
 
         /**
-         * Jackson breaks Json for Spark :thinking:
+         * Jackson breaks Json for Spark 🤔
          */
 
 /*      ObjectMapper objectMapper = new ObjectMapper();
