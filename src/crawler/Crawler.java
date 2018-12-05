@@ -110,7 +110,17 @@ public class Crawler {
      * @param jsonArray JSONArray
      */
     private void jsonToFile(JSONArray jsonArray) {
-        ObjectMapper objectMapper = new ObjectMapper();
+        try (FileWriter file = new FileWriter(CURRENT_DIR + "monsters.json")) {
+            file.write(jsonArray.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        /**
+         * Jackson breaks Json for Spark :thinking:
+         */
+
+/*      ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.configure(SerializationConfig.Feature.INDENT_OUTPUT, true);
 
         String originalJson = jsonArray.toString();
@@ -130,7 +140,7 @@ public class Crawler {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     /**

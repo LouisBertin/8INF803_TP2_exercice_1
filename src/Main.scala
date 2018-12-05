@@ -1,21 +1,41 @@
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.Row
+import org.apache.spark.sql.{DataFrame, SparkSession}
 
-object quickTest extends App
+object App
 {
-  import scala.math.random
-  val conf = new SparkConf().setAppName("petit test rapide").setMaster("local[*]")
-  val sc = new SparkContext(conf)
-  sc.setLogLevel("ERROR")
-  def test(nbrDecimales : Int = 1000) : Unit = {
-    val slices = nbrDecimales
-    val n = math.min(100000L * slices, Int.MaxValue).toInt
-    val count = sc.parallelize(1 until n, slices).map { i =>
-      val x = random * 2 - 1
-      val y = random * 2 - 1
-      if (x*x + y*y <= 1) 1 else 0
-    }.reduce(_ + _)
-    println("Pi is roughly " + 4.0 * count / (n - 1))
+  val CurrentPath = System.getProperty("user.dir")
+  val spark: SparkSession = SparkSession.builder.master("local").getOrCreate
+
+  def main(args: Array[String]): Unit =
+  {
+    val dataframe : DataFrame = readJson()
+    val RDD : RDD[Row] = dataFrameToRDD(dataframe)
+
+    invertedIndex(RDD)
   }
-  test(20)
-  println("Hello, world!")
+
+  /**
+    * convert Json file to Dataframe
+    */
+  def readJson(): DataFrame = {
+    val jsonFile : String = CurrentPath + "/src/crawler/monsters.json"
+    val df : DataFrame = spark.read.format("json").json(jsonFile)
+
+    return df
+  }
+
+  /**
+    * convert dataFrame to RDD
+    */
+  def dataFrameToRDD(dataframe: DataFrame): RDD[Row] = {
+    val rdd: RDD[Row] = dataframe.rdd
+    // debug
+    rdd.collect().foreach(println)
+
+    return rdd
+  }
+
+  def invertedIndex(Rdd: RDD[Row]): Unit = {
+  }
 }
