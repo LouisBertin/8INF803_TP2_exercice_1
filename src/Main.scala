@@ -1,5 +1,5 @@
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.Row
+import org.apache.spark.sql.functions.explode
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object App
@@ -9,10 +9,10 @@ object App
 
   def main(args: Array[String]): Unit =
   {
-    val dataframe : DataFrame = readJson()
-    val RDD : RDD[Row] = dataFrameToRDD(dataframe)
-
-    invertedIndex(RDD)
+    val dataFrame : DataFrame = readJson()
+    val rdd : RDD[String] = dataFrameToRDD(dataFrame)
+    val rddInverted : RDD[(String, String)] = invertedIndex(rdd)
+    rddToFile(rddInverted)
   }
 
   /**
@@ -28,14 +28,33 @@ object App
   /**
     * convert dataFrame to RDD
     */
-  def dataFrameToRDD(dataframe: DataFrame): RDD[Row] = {
-    val rdd: RDD[Row] = dataframe.rdd
-    // debug
-    rdd.collect().foreach(println)
+  def dataFrameToRDD(dataframe: DataFrame): RDD[String] = {
+    import spark.implicits._
+    // convert Dataframe to RDD
+    val rdd: RDD[String] = dataframe.withColumn("spells", explode($"spells")).rdd.map(_.mkString(","))
 
     return rdd
   }
 
-  def invertedIndex(Rdd: RDD[Row]): Unit = {
+  /**
+    * map & reduce
+    */
+  def invertedIndex(rdd: RDD[String]): RDD[(String, String)] = {
+    // convert RDD[String] to RDD[(String, String)] and swap key-value
+    val inverted : RDD[(String, String)] = rdd
+      .map(line => (line.split(",")(0), line.split(",")(1)) )
+      .map(pair => pair.swap)
+
+    // reduce by key
+    val rddReduced : RDD[(String, String)] = inverted.reduceByKey((accum, n) => accum + ", " + n )
+
+    return rddReduced
+  }
+
+  /**
+    * convert inverted Rdd to file
+    */
+  def rddToFile(rdd : RDD[(String, String)]): Unit = {
+    rdd.saveAsTextFile("rdd_to_file")
   }
 }

@@ -1,2 +1,6 @@
 out
 .idea
+rdd_to_file/._SUCCESS.crc
+rdd_to_file/.part-00000.crc
+rdd_to_file/_SUCCESS
+.DS_Store
