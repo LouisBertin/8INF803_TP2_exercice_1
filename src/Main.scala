@@ -55,6 +55,11 @@ object App
     * convert inverted Rdd to file
     */
   def rddToFile(rdd : RDD[(String, String)]): Unit = {
-    rdd.saveAsTextFile("rdd_to_file")
+    // check if folder exist
+    if (new java.io.File("src/rdd_to_file").exists) {
+      return
+    }
+
+    rdd.saveAsTextFile("src/rdd_to_file")
   }
 }
