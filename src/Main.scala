@@ -12,7 +12,10 @@ object App
     val dataFrame : DataFrame = readJson()
     val rdd : RDD[String] = dataFrameToRDD(dataFrame)
     val rddInverted : RDD[(String, String)] = invertedIndex(rdd)
-    rddToFile(rddInverted)
+    val secondRdd : RDD[(String, String)] = getSecondRdd()
+    val finalRdd : RDD[(String, String)] = joinAndReduce(rddInverted, secondRdd)
+
+    rddToFile(finalRdd)
   }
 
   /**
@@ -37,7 +40,7 @@ object App
   }
 
   /**
-    * map & reduce
+    * invert indexes
     */
   def invertedIndex(rdd: RDD[String]): RDD[(String, String)] = {
     // convert RDD[String] to RDD[(String, String)] and swap key-value
@@ -45,8 +48,15 @@ object App
       .map(line => (line.split(",")(0), line.split(",")(1)) )
       .map(pair => pair.swap)
 
+    return inverted
+  }
+
+  /**
+    * reduce rdd by key
+    */
+  def reduceRdd(rdd : RDD[(String, String)]): RDD[(String, String)] = {
     // reduce by key
-    val rddReduced : RDD[(String, String)] = inverted.reduceByKey((accum, n) => accum + ", " + n )
+    val rddReduced : RDD[(String, String)] = rdd.reduceByKey((accum, n) => accum + ", " + n )
 
     return rddReduced
   }
@@ -60,6 +70,29 @@ object App
       return
     }
 
-    rdd.saveAsTextFile("src/rdd_to_file")
+    rdd.coalesce(1).saveAsTextFile("src/rdd_to_file")
   }
+
+  /**
+    * get rdd from first practical work
+    */
+  def getSecondRdd(): RDD[(String, String)] = {
+    val csvFile : String = CurrentPath + "/src/crawler/out.csv"
+    val df : DataFrame = spark.read.format("csv").csv(csvFile)
+    val rdd : RDD[String] = df.rdd.map(_.mkString(","))
+    val finalRdd : RDD[(String, String)] = rdd.map(line => (line.split(",")(0).toLowerCase(), line.split(",")(1)) )
+
+    return finalRdd
+  }
+
+  /**
+    * join and reduce
+    */
+  def joinAndReduce(rdd : RDD[(String, String)], rdd2: RDD[(String, String)]): RDD[(String, String)] = {
+    val finalRdd = rdd.union(rdd2)
+    val rddReduced = reduceRdd(finalRdd)
+
+    return rddReduced
+  }
+
 }
