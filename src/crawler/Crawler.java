@@ -1,8 +1,5 @@
 package crawler;
 
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.SerializationConfig;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -11,7 +8,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.parser.Parser;
 import org.jsoup.select.Elements;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,38 +15,40 @@ import java.util.List;
 public class Crawler {
     // Current file directory
     private final String CURRENT_DIR = System.getProperty("user.dir") + "/src/crawler/";
+    // jsonArray
+    private JSONArray jsonArray;
 
     /**
      * Constructor
      */
-    public Crawler() {
-        ArrayList allLinks = getAllLinks();
-        JSONArray jsonArray = getLinksData(allLinks);
-        jsonToFile(jsonArray);
+    public Crawler(String url) {
+        ArrayList allLinks = getAllLinks(url);
+        jsonArray = getLinksData(allLinks);
     }
 
     /**
      * return all monster links from legacy.aonprd.com
      * @return ArrayList
      */
-    private ArrayList getAllLinks() {
+    private ArrayList getAllLinks(String url) {
         ArrayList links = new ArrayList();
         Document doc = null;
 
         try {
-            doc = Jsoup.connect("http://legacy.aonprd.com/bestiary/monsterIndex.html").get();
+            doc = Jsoup.connect(url).get();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         Elements newsHeadlines = doc.select("#monster-index-wrapper ul li");
+
         for (Element headline : newsHeadlines) {
             String headlineChar = (String) headline.toString();
             String test = Character.toString(headlineChar.charAt(4));
             if (test.equals("<")) {
                 Element tag = Jsoup.parse(headlineChar, "", Parser.xmlParser());
-                String url = "http://legacy.aonprd.com/bestiary/" + tag.select("a").attr("href");
-                links.add(url);
+                String urlFetched = Helper.removeUrlLastPart(url) + "/" + tag.select("a").attr("href");
+                links.add(urlFetched);
             }
         }
 
@@ -71,8 +69,12 @@ public class Crawler {
             try {
                 String url = (String) links.get(i);
                 Document doc = Jsoup.connect(url).get();
+
                 // fetch monster name
                 Elements monsterNames = doc.select(".stat-block-title > b");
+                if (monsterNames.isEmpty()) {
+                    monsterNames = doc.select(".stat-block-title");
+                }
 
                 insertJson(jsonArray, monsterNames, doc);
             } catch (IOException e) {
@@ -103,44 +105,6 @@ public class Crawler {
 
             jsonArray.put(monster);
         }
-    }
-
-    /**
-     * convert JsonArray to Json file
-     * @param jsonArray JSONArray
-     */
-    private void jsonToFile(JSONArray jsonArray) {
-        try (FileWriter file = new FileWriter(CURRENT_DIR + "monsters.json")) {
-            file.write(jsonArray.toString());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        /**
-         * Jackson breaks Json for Spark 🤔
-         */
-
-/*      ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.configure(SerializationConfig.Feature.INDENT_OUTPUT, true);
-
-        String originalJson = jsonArray.toString();
-        JsonNode tree = null;
-        try {
-            tree = objectMapper.readTree(originalJson);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            String formattedJson = objectMapper.writeValueAsString(tree);
-
-            try (FileWriter file = new FileWriter(CURRENT_DIR + "monsters.json")) {
-                file.write(formattedJson);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
     }
 
     /**
@@ -177,4 +141,13 @@ public class Crawler {
 
         return spells;
     }
+
+    /**
+     *
+     * @return JSONArray
+     */
+    public JSONArray getJsonArray() {
+        return jsonArray;
+    }
+
 }
