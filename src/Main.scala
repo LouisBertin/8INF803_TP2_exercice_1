@@ -70,7 +70,8 @@ object App
       return
     }
 
-    rdd.coalesce(1).saveAsTextFile("src/rdd_to_file")
+    // export to gephi format
+    rdd.map(x => x._1 + "," + x._2).coalesce(1).saveAsTextFile("src/rdd_to_file")
   }
 
   /**
