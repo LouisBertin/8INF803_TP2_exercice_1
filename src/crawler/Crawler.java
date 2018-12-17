@@ -13,8 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Crawler {
-    // Current file directory
-    private final String CURRENT_DIR = System.getProperty("user.dir") + "/src/crawler/";
     // jsonArray
     private JSONArray jsonArray;
 
@@ -35,7 +33,7 @@ public class Crawler {
         Document doc = null;
 
         try {
-            doc = Jsoup.connect(url).get();
+            doc = Jsoup.connect(url).ignoreHttpErrors(true).get();
         } catch (IOException e) {
             e.printStackTrace();
         }
