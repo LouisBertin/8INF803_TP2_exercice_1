@@ -2,7 +2,7 @@
 
 Projet constitué :
 
-* d'un crawler en Java qui permet de récupérer tous les spells des montres des 5 bestiaires présents sur le site http://legacy.aonprd.com/bestiary/
+* d'un crawler en Java qui permet de récupérer tous les spells des montres des 5 bestiaires présents sur le site http://legacy.aonprd.com/
 * d'un cluster Spark pour effectuer des traitements sur cette grande quantité de données
 
 ### Fonctionnement
